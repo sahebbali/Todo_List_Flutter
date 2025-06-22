@@ -99,7 +99,10 @@ class _HomeState extends State<Home> {
                       minimumSize: Size(60, 60),
                       elevation: 10,
                     ),
-                    child: Text('+', style: TextStyle(fontSize: 40)),
+                    child: Text(
+                      '+',
+                      style: TextStyle(fontSize: 40, color: Colors.white),
+                    ),
                   ),
                 ),
               ],

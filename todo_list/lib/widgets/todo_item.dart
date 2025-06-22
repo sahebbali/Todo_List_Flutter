@@ -41,7 +41,7 @@ class ToDoItem extends StatelessWidget {
         ),
         trailing: Container(
           padding: EdgeInsets.all(0),
-          margin: EdgeInsets.symmetric(vertical: 12),
+          margin: EdgeInsets.symmetric(vertical: 6),
           height: 35,
           width: 35,
           decoration: BoxDecoration(
@@ -50,7 +50,7 @@ class ToDoItem extends StatelessWidget {
           ),
           child: IconButton(
             color: Colors.white,
-            iconSize: 18,
+            iconSize: 20,
             icon: Icon(Icons.delete),
             onPressed: () {
               // print('Clicked on delete icon');
