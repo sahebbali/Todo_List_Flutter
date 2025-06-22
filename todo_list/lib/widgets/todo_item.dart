@@ -9,11 +9,11 @@ class ToDoItem extends StatelessWidget {
   final onDeleteItem;
 
   const ToDoItem({
-    Key? key,
+    super.key,
     required this.todo,
     required this.onToDoChanged,
     required this.onDeleteItem,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +24,7 @@ class ToDoItem extends StatelessWidget {
           // print('Clicked on Todo Item.');
           onToDoChanged(todo);
         },
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
